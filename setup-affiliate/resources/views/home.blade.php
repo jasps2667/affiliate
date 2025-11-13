@@ -148,5 +148,14 @@
     </div>
   </div>
 @include('slider')
+
+<div class="row">
+    <div class="col-sm-3">
+        <div class="scale">
+            <h4>1. Dashboard</h4>
+            <p>Insightful dashboard filled with global data for you. Appealing and highly customizable "portal" for your promoters.</p>
+        </div>
+    </div>
+</div>
 </div>
 @endsection
