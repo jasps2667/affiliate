@@ -151,7 +151,22 @@
 
 <div class="row border-row">
     <div class="col-sm-3">
-        <div class="scale">
+        <div class="scale scale_active">
+            <h4>1. Dashboard</h4>
+            <p>Insightful dashboard filled with global data for you. Appealing and highly customizable "portal" for your promoters.</p>
+        </div>
+
+        <div class="scale ">
+            <h4>1. Dashboard</h4>
+            <p>Insightful dashboard filled with global data for you. Appealing and highly customizable "portal" for your promoters.</p>
+        </div>
+
+        <div class="scale ">
+            <h4>1. Dashboard</h4>
+            <p>Insightful dashboard filled with global data for you. Appealing and highly customizable "portal" for your promoters.</p>
+        </div>
+
+        <div class="scale ">
             <h4>1. Dashboard</h4>
             <p>Insightful dashboard filled with global data for you. Appealing and highly customizable "portal" for your promoters.</p>
         </div>
