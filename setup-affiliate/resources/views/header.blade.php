@@ -7,8 +7,8 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav m-auto mb-2 mb-lg-0 text-white">
-        <li class="nav-item text-white">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0 text-light">
+        <li class="nav-item text-light">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
