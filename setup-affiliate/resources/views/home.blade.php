@@ -125,6 +125,28 @@
   </div>
 </div>
 
-@include('slider')
 
+<div class="container text-center my-5">
+<div class="row justify-content-center align-items-center g-4">
+    <div class="col-auto">
+      <img src="{{ asset('upload/bar1.webp') }}" alt="Logo 1" class="logo-img">
+    </div>
+    <div class="col-auto">
+      <img src="{{ asset('upload/bar2.avif') }}" alt="Logo 2" class="logo-img">
+    </div>
+    <div class="col-auto">
+      <img src="{{ asset('upload/bar3.webp') }}" alt="Logo 3" class="logo-img">
+    </div>
+    <div class="col-auto">
+      <img src="{{ asset('upload/bar4.avif') }}" alt="Logo 4" class="logo-img">
+    </div>
+    <div class="col-auto">
+      <img src="{{ asset('upload/bar5.webp') }}" alt="Logo 5" class="logo-img">
+    </div>
+    <div class="col-auto">
+      <img src="{{ asset('upload/bar6.png') }}" alt="Logo 6" class="logo-img">
+    </div>
+  </div>
+@include('slider')
+</div>
 @endsection
