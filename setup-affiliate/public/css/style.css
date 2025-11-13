@@ -187,3 +187,7 @@
 .scale:hover{
   border-top: 1px solid black;
 }
+
+.bg-dark.text-white.py-4.position-relative{
+  height: 750px;
+}

@@ -10,20 +10,21 @@
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
     </head>
+
     <body>
         <header>
         @include('user_header')
         </header>
 
         <main>
-            @yield('content')
+            @yield('user_content')
         </main>
 
         <footer>
-        @include('footer')
+        <!-- @include('footer') -->
         </footer>
 
         <!-- Add your JavaScript links here -->
-
+       
     </body>
     </html>
