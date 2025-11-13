@@ -1,175 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Study Carousel</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .case-study-carousel {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
 
-        .carousel-item {
-            padding: 0 15px;
-        }
-
-        .case-study-card {
-            background: #0f1419;
-            border-radius: 24px;
-            padding: 50px;
-            color: white;
-            min-height: 500px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .case-study-badge {
-            background: rgba(74, 222, 128, 0.2);
-            color: #4ade80;
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 14px;
-            display: inline-block;
-            margin-bottom: 30px;
-        }
-
-        .company-logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 28px;
-            font-weight: 600;
-            margin-bottom: 40px;
-        }
-
-        .company-logo img {
-            width: 30px;
-            height: 30px;
-        }
-
-        .case-study-title {
-            font-size: 42px;
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 30px;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-
-        .stat-card {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 16px;
-            padding: 30px;
-            text-align: center;
-        }
-
-        .stat-number {
-            font-size: 48px;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .stat-label {
-            font-size: 14px;
-            color: rgba(255, 255, 255, 0.7);
-        }
-
-        .testimonial-text {
-            font-size: 16px;
-            line-height: 1.6;
-            color: rgba(255, 255, 255, 0.9);
-            margin-bottom: 25px;
-        }
-
-        .author-info {
-            font-size: 15px;
-        }
-
-        .author-name {
-            font-weight: 600;
-            margin-bottom: 5px;
-        }
-
-        .author-title {
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 14px;
-        }
-
-        .cta-button {
-            background: #3b82f6;
-            color: white;
-            padding: 12px 28px;
-            border-radius: 8px;
-            border: none;
-            font-weight: 600;
-            font-size: 15px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .cta-button:hover {
-            background: #2563eb;
-        }
-
-        .carousel-control-prev,
-        .carousel-control-next {
-            width: 50px;
-            height: 50px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            top: 50%;
-            transform: translateY(-50%);
-            opacity: 1;
-        }
-
-        .carousel-control-prev {
-            left: -70px;
-        }
-
-        .carousel-control-next {
-            right: -70px;
-        }
-
-        .carousel-control-prev:hover,
-        .carousel-control-next:hover {
-            background: rgba(255, 255, 255, 0.2);
-        }
-
-        .carousel-indicators {
-            bottom: -50px;
-        }
-
-        .carousel-indicators button {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.3);
-        }
-
-        .carousel-indicators button.active {
-            background: white;
-        }
-
-        .decorative-image {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 300px;
-            height: 300px;
-            opacity: 0.3;
-        }
-    </style>
-</head>
-<body>
 
 <div class="case-study-carousel">
     <div id="caseStudyCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -241,6 +70,10 @@
                             <div class="stat-number">500+</div>
                             <div class="stat-label">Affiliates</div>
                         </div>
+                        <div class="stat-card" style="grid-column: span 2;">
+                            <div class="stat-number">150+</div>
+                            <div class="stat-label">Conversion rate</div>
+                        </div>
                     </div>
 
                     <p class="testimonial-text">
@@ -256,7 +89,7 @@
                 </div>
             </div>
 
-            <!-- Slide 3: Example Company -->
+            <!-- Slide 3: GrowthCo -->
             <div class="carousel-item" data-bs-interval="5000">
                 <div class="case-study-card">
                     <span class="case-study-badge">Case Study</span>
@@ -276,6 +109,10 @@
                         <div class="stat-card">
                             <div class="stat-number">150+</div>
                             <div class="stat-label">Active promoters</div>
+                        </div>
+                        <div class="stat-card" style="grid-column: span 2;">
+                            <div class="stat-number">$2M+</div>
+                            <div class="stat-label">Generated revenue</div>
                         </div>
                     </div>
 
@@ -306,5 +143,21 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-</body>
-</html>
+<script>
+    // Initialize carousel with custom options
+    const carousel = document.querySelector('#caseStudyCarousel');
+    const bsCarousel = new bootstrap.Carousel(carousel, {
+        interval: 5000,
+        wrap: true,
+        touch: true
+    });
+
+    // Add custom styling for previous and next items visibility
+    carousel.addEventListener('slide.bs.carousel', function (e) {
+        const items = document.querySelectorAll('.carousel-item');
+        items.forEach(item => {
+            item.style.display = 'block';
+        });
+    });
+</script>
+
