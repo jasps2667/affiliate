@@ -141,7 +141,7 @@
       <img src="{{ asset('upload/bar4.avif') }}" alt="Logo 4" class="logo-img">
     </div>
     <div class="col-auto">
-      <img src="{{ asset('upload/bar5.webp') }}" alt="Logo 5" class="logo-img">
+      <img src="{{ asset('upload/bar5.avif') }}" alt="Logo 5" class="logo-img">
     </div>
     <div class="col-auto">
       <img src="{{ asset('upload/bar6.png') }}" alt="Logo 6" class="logo-img">
