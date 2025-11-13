@@ -17,7 +17,7 @@
         </header>
 
         <main>
-            @yield('user_content')
+            @yield('content')
         </main>
 
         <footer>

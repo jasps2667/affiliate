@@ -2,7 +2,7 @@
 
 @section('title', 'Home Page')
 
-@section('user_content')
+@section('content')
 
 <h1>user dashboard</h1>
 
