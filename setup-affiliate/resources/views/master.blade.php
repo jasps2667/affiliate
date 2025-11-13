@@ -12,7 +12,7 @@
     </head>
     <body>
         <header>
-        @include('user_header')
+        @include('header')
         </header>
 
         <main>
