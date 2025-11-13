@@ -149,7 +149,7 @@
   </div>
 @include('slider')
 
-<div class="row">
+<div class="row border-row">
     <div class="col-sm-3">
         <div class="scale">
             <h4>1. Dashboard</h4>

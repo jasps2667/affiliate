@@ -169,3 +169,13 @@
     height: 300px;
     opacity: 0.3;
 }
+
+.border-row {
+  --border-bottom-width: 0px;
+  --border-color: var(--token-7ec3dba6-95de-4f1d-a546-633f9a329fcd, rgb(221, 231, 237));
+  --border-left-width: 0px;
+  --border-right-width: 0px;
+  --border-style: solid;
+  --border-top-width: 1px;
+  opacity: 1;
+}
