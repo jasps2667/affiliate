@@ -1,5 +1,4 @@
 
-
 <div class="case-study-carousel">
     <div id="caseStudyCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -70,10 +69,6 @@
                             <div class="stat-number">500+</div>
                             <div class="stat-label">Affiliates</div>
                         </div>
-                        <div class="stat-card" style="grid-column: span 2;">
-                            <div class="stat-number">150+</div>
-                            <div class="stat-label">Conversion rate</div>
-                        </div>
                     </div>
 
                     <p class="testimonial-text">
@@ -89,7 +84,7 @@
                 </div>
             </div>
 
-            <!-- Slide 3: GrowthCo -->
+            <!-- Slide 3: Example Company -->
             <div class="carousel-item" data-bs-interval="5000">
                 <div class="case-study-card">
                     <span class="case-study-badge">Case Study</span>
@@ -109,10 +104,6 @@
                         <div class="stat-card">
                             <div class="stat-number">150+</div>
                             <div class="stat-label">Active promoters</div>
-                        </div>
-                        <div class="stat-card" style="grid-column: span 2;">
-                            <div class="stat-number">$2M+</div>
-                            <div class="stat-label">Generated revenue</div>
                         </div>
                     </div>
 
@@ -142,22 +133,4 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-<script>
-    // Initialize carousel with custom options
-    const carousel = document.querySelector('#caseStudyCarousel');
-    const bsCarousel = new bootstrap.Carousel(carousel, {
-        interval: 5000,
-        wrap: true,
-        touch: true
-    });
-
-    // Add custom styling for previous and next items visibility
-    carousel.addEventListener('slide.bs.carousel', function (e) {
-        const items = document.querySelectorAll('.carousel-item');
-        items.forEach(item => {
-            item.style.display = 'block';
-        });
-    });
-</script>
 
