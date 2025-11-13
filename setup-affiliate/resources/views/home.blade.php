@@ -149,6 +149,9 @@
   </div>
 @include('slider')
 
+<h1>Easy to start. Built to scale
+</h1>
+<p>Easy to use, reliable and scalable</p>
 <div class="row border-row">
     <div class="col-sm-3 ps-0">
         <div class="scale scale_active">
