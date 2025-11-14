@@ -3,9 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\RedirectController;
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
 // Route::get('/', function () {
 //     return view('home');
 // })->name('dashboard');
@@ -38,5 +38,5 @@ Route::get('/payouts', function () {
 
 Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('/admin', [AdminController::class, 'index'])->name('admin.dashboard');
->>>>>>> Stashed changes
+
 });
