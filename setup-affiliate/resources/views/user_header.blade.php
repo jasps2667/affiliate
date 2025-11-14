@@ -12,7 +12,7 @@
         <a class="nav-link active text-light" aria-current="page" href="{{route('user_dash')}}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="#">Referrals</a>
+          <a class="nav-link text-light" href="{{route('user_referrals')}}">Referrals</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-light" href="#">Commisions</a>
