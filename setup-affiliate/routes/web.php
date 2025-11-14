@@ -2,15 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminController;
-
-<<<<<<< Updated upstream
+use App\Http\Controllers\RedirectController;
 Route::get('/', function () {
     return view('home');
-=======
+});
 // Route::get('/', function () {
 //     return view('home');
 // })->name('dashboard');
-use App\Http\Controllers\RedirectController;
+
 
 Route::get('/redirect', [RedirectController::class, 'index'])->middleware('auth');
 
