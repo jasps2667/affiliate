@@ -21,3 +21,7 @@ Route::get('/commissions', function () {
     return view('comission');
 })->name('user_comissions');
 
+Route::get('/payouts', function () {
+    return view('payouts');
+})->name('user_payouts');
+

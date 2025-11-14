@@ -18,7 +18,7 @@
           <a class="nav-link text-light" href="{{route('user_comissions')}}">Commisions</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="#">Payouts</a>
+          <a class="nav-link text-light" href="{{route('user_payouts')}}">Payouts</a>
         </li>
       </ul>
     </div>
