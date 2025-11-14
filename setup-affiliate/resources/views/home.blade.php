@@ -4,16 +4,6 @@
 
 @section('content')
 {{-- Hero Section --}}
-@auth
-<div class="text-end me-4 mt-3">
-    <form method="POST" action="{{ route('logout') }}">
-        @csrf
-        <button type="submit" class="btn btn-danger">
-            Logout
-        </button>
-    </form>
-</div>
-@endauth
 
 <div class="bg-dark text-white py-4 position-relative">
   <div class="text-center py-5">
