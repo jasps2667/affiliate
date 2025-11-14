@@ -1,10 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
-Route::get('/', function () {
-    return view('home');
-})->name('dashboard');
+use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\RedirectController;
+// Route::get('/', function () {
+//     return view('home');
+// })->name('dashboard');
 
 
 Route::get('/user', function () {
@@ -25,3 +26,12 @@ Route::get('/payouts', function () {
     return view('payouts');
 })->name('user_payouts');
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::middleware(['auth', 'isAdmin'])->group(function () {
+    Route::get('/admin', [AdminController::class, 'index'])->name('admin.dashboard');
+});
+
+Route::get('/redirect', [RedirectController::class, 'check']);
